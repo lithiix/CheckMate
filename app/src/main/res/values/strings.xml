@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CheckMate</string>
+    <string name="OnboardingTitle1"><![CDATA[Create & Manage Tasks Efficiently]]></string>
+    <string name="OnBoardingDiscription1">Easily add new tasks to organize your day.Categorize and manage them in just a few taps.</string>
+    <string name="OBnext">NEXT ➤</string>
+    <string name="OnboardingTitle2"><![CDATA[Set Priorities & Due Dates]]></string>
+    <string name="OnBoardingDiscription2">Keep important tasks on top. Assign priority levels and set due dates to stay on track.</string>
+    <string name="OnboardingTitle3"><![CDATA[Track Progress & Stay Focused]]></string>
+    <string name="OnBoardingDiscription3">Stay on top of your tasks with progress tracking. Keep your workflow smooth and efficient.</string>
+    <string name="get_started">GET Started</string>
+    <string name="skip">SKIP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

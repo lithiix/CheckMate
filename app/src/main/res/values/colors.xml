@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#007AFF</color>
+    <color name="Secondary">#34C759</color>
+    <color name="Background">#F5F5F7</color>
+    <color name="Accent">#FF9500</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="card_gradient">@color/gradient_card</color>
+    <color name="bottomNav">#A3CAF6</color>
+
+    //bottm nav
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+</resources>

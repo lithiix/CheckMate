@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/iconhome"/>
+
+    <item android:id="@+id/list"
+        android:title="Task List"
+        android:icon="@drawable/iconlist"/>
+
+    <item android:id="@+id/addTask"
+        android:title=""/>
+
+    <item android:id="@+id/analytics"
+        android:title="Analytics"
+        android:icon="@drawable/iconanalytics"/>
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/iconprofile"/>
+
+
+
+
+
+</menu>
