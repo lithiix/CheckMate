@@ -14,7 +14,7 @@ import com.example.checkmate.onboarding.ob1
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        private const val SPLASH_SCREEN: Long = 5000  // Correct way to define a constant in Kotlin
+        private const val SPLASH_SCREEN: Long = 4000  // Correct way to define a constant in Kotlin
     }
 
     @SuppressLint("MissingInflatedId")

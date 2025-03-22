@@ -38,6 +38,11 @@ class navigat : AppCompatActivity() {
             }
             true
         }
+
+        binding.fab.setOnClickListener {
+            replaceFragment(addTask())
+        }
+
     }
 
     private fun replaceFragment(fragment: Fragment) {

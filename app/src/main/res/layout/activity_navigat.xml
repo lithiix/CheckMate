@@ -9,37 +9,43 @@
     android:background="@drawable/gradient_background"
     tools:context=".navigat">
 
+    <!-- Main content area with bottom margin -->
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        tools:context=".navigat">
 
+    </FrameLayout>
+
+    <!-- Bottom bar locked to bottom -->
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
+        android:layout_gravity="bottom"
         app:fabAlignmentMode="center"
         app:fabAnchorMode="cradle"
         app:fabCradleMargin="15dp"
         app:fabCradleVerticalOffset="5dp"
-        app:fabCradleRoundedCornerRadius="20dp"
-        android:backgroundTint="@color/bottom_nav_gradient"
-        app:elevation="8dp">
+        app:fabCradleRoundedCornerRadius="50dp"
+        android:backgroundTint="@android:color/transparent"
+        >
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="end"
-            android:layout_marginEnd="15dp"
-            android:foregroundGravity="bottom"
+            android:layout_marginEnd="18dp"
             app:menu="@menu/bottom_nav"
             app:labelVisibilityMode="unlabeled"
             android:background="@drawable/navtransparent"/>
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
+    <!-- Centered FAB anchored to BottomAppBar -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -49,8 +55,6 @@
         app:layout_anchorGravity="center"
         android:src="@drawable/iconadd"
         android:backgroundTint="@color/bottomNav"
-        app:elevation="12dp"/>
-
-
+        app:elevation="5dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
