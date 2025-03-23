@@ -1,6 +1,7 @@
 package com.example.checkmate
 
 import android.os.Bundle
+import android.widget.FrameLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,12 +13,20 @@ class navigat : AppCompatActivity() {
 
     private lateinit var binding: ActivityNavigatBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
         binding = ActivityNavigatBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Make FrameLayout transparent
+        binding.frameLayout.setBackgroundColor(android.graphics.Color.TRANSPARENT)
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -51,4 +60,6 @@ class navigat : AppCompatActivity() {
         fragmentTransaction.replace(R.id.frame_layout, fragment)
         fragmentTransaction.commit()
     }
+
+
 }

@@ -28,9 +28,8 @@
         android:layout_width="390dp"
         android:layout_height="386dp"
         android:layout_marginBottom="44dp"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="5dp"
         android:backgroundTint="@color/gradient_card"
+        app:cardCornerRadius="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
@@ -117,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/primary"
                 android:text="Sign In"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
 
 
         </LinearLayout>

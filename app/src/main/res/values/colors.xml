@@ -8,6 +8,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="card_gradient">@color/gradient_card</color>
     <color name="bottomNav">#A3CAF6</color>
+    <color name="transparent">#00FFFFFF</color>
 
     //bottm nav
     <color name="colorPrimary">#6200EE</color>

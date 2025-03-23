@@ -3,16 +3,183 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".profile"
-    android:background="@drawable/gradient_background">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="profile"
-        android:textSize="26dp"
-        android:layout_gravity="center"/>
+    android:background="@drawable/transparent_card">
 
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center">
+
+            <TextView
+                android:id="@+id/textViewAnalytics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Analytics"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/avatar"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewFullName"
+                android:layout_width="380dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/gradient_card"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewFullNameLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Full Name"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/editTextFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="text"
+                        android:text="Lithira Ransika" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewEmail"
+                android:layout_width="380dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/gradient_card"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewEmailLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Email"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textEmailAddress"
+                        android:text="example@example.com" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewPhone"
+                android:layout_width="380dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/gradient_card"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewPhoneLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Phone Number"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/editTextPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="phone"
+                        android:text="+94 77 123 4567" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewAddress"
+                android:layout_width="380dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/gradient_card"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewAddressLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Role"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/editTextAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-light"
+                        android:inputType="textPostalAddress"
+                        android:text="Student" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 </FrameLayout>
